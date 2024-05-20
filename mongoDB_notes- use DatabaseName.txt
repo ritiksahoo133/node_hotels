@@ -1,0 +1,18 @@
+1.create database- use DatabaseName;
+
+2.create collection or table- db.createCollection("users")
+
+3.insert data = db.collection_name/table_Name.insertone({id:1,name:"Ritik",password;"ritik133"})
+
+4.How to show table data or collection: db.table_Name/Collection.find()
+
+4.select * from users=db.collectionName.find()
+
+//select particular document or row
+5.select * from users where age > 21:- db.users.find({age:{$gt:21}});
+
+6.//Update
+UPDATE users SET age=22 WHERE username="Ritik" :-db.users.updateOne({username:"Ritik"},{$set:{id:3}}) 
+
+7//Delete
+DELETE from users where id = 1 :- db.users.deleteOne({id:1})
